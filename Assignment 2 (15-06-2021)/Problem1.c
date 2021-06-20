@@ -1,5 +1,5 @@
-1. Write a program to take input as a password but should display only x's instead of characters.
-Ans-
+//1. Write a program to take input as a password but should display only x's instead of characters.
+//Ans-
 #include <conio.h>
 #include <stdio.h>
 void main()
