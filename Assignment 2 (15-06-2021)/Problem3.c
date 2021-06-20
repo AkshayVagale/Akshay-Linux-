@@ -1,5 +1,5 @@
-3. Program to find the sum of digits of a number until the sum is reduce to 1 digit
-Ans- 
+//3. Program to find the sum of digits of a number until the sum is reduce to 1 digit
+//Ans- 
 
 #include <stdio.h>
 void main()
