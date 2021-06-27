@@ -7,24 +7,26 @@
 int main()
 {
    int numList[ARRAY_SIZE];
-   int i=0,firstLargest,secoundLargest;
+   int i=0,firstLargest,secondLargest = 0;
    printf("Enter the %d array element\n",ARRAY_SIZE);
    for(i=0;i<ARRAY_SIZE;i++)
    {
        scanf("%d",&numList[i]);
    }
    firstLargest=numList[0];
-   secoundLargest=numList[0];
-   for(i=0;i<ARRAY_SIZE;i++)
+   for(i=1;i<ARRAY_SIZE;i++)
    {
        if( numList[i] > firstLargest ){
             firstLargest=numList[i];
        }
-       if( numList[i] < firstLargest && numList[i] > secoundLargest ){
-            secoundLargest = numList[i];
+   }
+   for(i=0;i<ARRAY_SIZE;i++)
+   {
+	   if( numList[i] > secondLargest && numList[i] < firstLargest){
+            secondLargest = numList[i];
        }
    }
-   printf("Second largest number is : %d",secoundLargest);
+   printf("Second largest number is : %d",secondLargest);
 }
 /*
 Output:
