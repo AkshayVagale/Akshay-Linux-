@@ -6,9 +6,10 @@
 
 int main()
 {
-	unsigned char num,pos;
+	unsigned char num;
+	int pos;
 	printf("Enter the number : ");
-	scanf("%d",&num);
+	scanf("%x",&num);
 
 	printf("Enter the bit position in given number %d to set that bit: ",num);
     scanf("%d",&pos);
