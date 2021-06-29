@@ -1,18 +1,18 @@
 //Write a program as a Macro will take two arguments. It should return the position 1 or 0.
 #include<stdio.h>
-#define BITE_VALUE(value,bitPosition) ((value & (1 << bitPosition)) > 0)
- 
+#define BITE_VALUE(value,bitPosition) ((value & (1 << bitPosition)) != 0)
+
 int main()
 {
-	unsigned char num,pos;
+	char num;
+	int pos;
 	printf("Enter the number : ");
-	scanf("%d",&num);
+	scanf("%x",&num);
 	printf("Enter the bit position : ");
-    scanf("%d",&pos);
+    scanf("%x",&pos);
 
-    if(pos >= 0 && pos <= 31){
+    if(pos >= 0 && pos <= 7){
         printf("Bit value of position %d is %d\n",pos,BITE_VALUE(num,pos));
-        //BITE_VALUE(num,pos)
     }
     else{
         printf("position is in out of range \n");
